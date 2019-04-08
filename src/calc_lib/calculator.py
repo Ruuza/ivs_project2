@@ -24,7 +24,8 @@ def Addition(a,b):
 			1
 
 	"""
-	return lambda retVal : a + b
+	retVal = a + b
+	return retVal
 
 def Subtraction(a,b):
 	"""
@@ -46,8 +47,8 @@ def Subtraction(a,b):
 			1
 
 	"""
-
-	return lambda retVal : a - b
+	retVal = a - (b)
+	return retVal
 
 def Division(a,b):
 	"""
@@ -58,8 +59,7 @@ def Division(a,b):
 		
 		- Special Cases::
 			
-			Division(a,0); a is from (-inf,+inf) -- Returns +infinity
-			Division(0,0); -- Returns NaN
+			Division(a,0); a is from (-inf,+inf) -- Returns None
 
 		- Example::
 
@@ -108,7 +108,8 @@ def Factorial(a):
 
 		- Special Cases::
 
-			Factorial(0) -- **Returns:**  1
+			Factorial(0) -- Returns:  1
+			Factorial(a); a is not from N + {0} -- Returns None
 
 		- Example::
 
@@ -157,7 +158,7 @@ def Root(a,b):
 
 		- Special Cases::
 
-			n/a
+			Root(a); a is <0 -- Return None
 
 		- Example::
 
@@ -176,14 +177,13 @@ def Root(a,b):
 def Log(a,b):
 	"""
 		**Mathematical Logarithm:**
-		Calculates the value of logarithm of *b* to base *a*
+		Calculates the value of logarithm of *a* to base *b*
 
 		:return: retVal - value of this operaton
 
 		- Special Cases::
 
-			Log(a,1); a is from (0,+inf) -- Returns 0
-			Log(a,b); a is from (-inf,0> or b is from (-inf,0> -- Returns None
+			Log(a,b); a or b is <0 -- Returns None
 
 		- Example::
 
