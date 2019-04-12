@@ -69,11 +69,12 @@ def Division(a,b):
 
 			2
 
-	"""
+	"""	
+	if b==0:
+        	return None
+	retVal = a / b
+	return retVal
 
-	"""
-	TODO: code
-	"""
 def Multiplication(a,b):
 	"""
 		**Mathematical Muliplication:**
@@ -93,11 +94,9 @@ def Multiplication(a,b):
 
 			4
 
-	"""
-
-	"""
-	TODO: code
-	"""
+	"""	
+	retVal = a * b
+	return retVal	
 
 def Factorial(a):
 	"""
@@ -121,9 +120,14 @@ def Factorial(a):
 
 	"""
 
-	"""
-	TODO: code
-	"""
+	
+	retVal = 1
+	if a<1:
+        	return None
+    	while a!=1:
+        	retVal = a * retVal
+        	a-=1
+    	return retVal	
 
 def Exponentiation(a,b):
 	"""
@@ -145,9 +149,8 @@ def Exponentiation(a,b):
 			2
 	"""
 
-	"""
-	TODO: code
-	"""
+	retVal = a ** b
+	return retVal
 
 def Root(a,b):
 	"""
@@ -170,9 +173,10 @@ def Root(a,b):
 		
 	"""
 
-	"""
-	TODO:code
-	"""
+	if a<0 :
+        	return None
+	retVal = a ** (1/b)
+	return retVal
 
 def Log(a,b):
 	"""
