@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>calculator &#8212; Calculator  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for calculator</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Source code for Calculator by RunySoft</span>
+
+<span class="sd">.. moduleauthor:: RunySoft</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="Addition"><a class="viewcode-back" href="../index.html#calculator.Addition">[docs]</a><span class="k">def</span> <span class="nf">Addition</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		**Mathematical Addition:**</span>
+<span class="sd">		Adds viariables a and b.</span>
+
+<span class="sd">		:return: retVal - value of this operation</span>
+
+<span class="sd">		- Special Cases::</span>
+
+<span class="sd">			n/a</span>
+
+<span class="sd">		- Example::</span>
+
+<span class="sd">			Addition(1,0)</span>
+
+<span class="sd">		- Expected Success Response::</span>
+
+<span class="sd">			1</span>
+
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="k">return</span> <span class="k">lambda</span> <span class="n">retVal</span> <span class="p">:</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span></div>
+
+<div class="viewcode-block" id="Subtraction"><a class="viewcode-back" href="../index.html#calculator.Subtraction">[docs]</a><span class="k">def</span> <span class="nf">Subtraction</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		**Mathematical Substraction::**</span>
+<span class="sd">		Subtracts variables a and b.</span>
+
+<span class="sd">		:return: retVal - value of this operation</span>
+
+<span class="sd">		- Special Cases::</span>
+
+<span class="sd">			n/a</span>
+
+<span class="sd">		- Example::</span>
+
+<span class="sd">			Subtraction(3,2)</span>
+
+<span class="sd">		- Expected Success Response::</span>
+<span class="sd">			</span>
+<span class="sd">			1</span>
+
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="k">return</span> <span class="k">lambda</span> <span class="n">retVal</span> <span class="p">:</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span></div>
+
+<div class="viewcode-block" id="Division"><a class="viewcode-back" href="../index.html#calculator.Division">[docs]</a><span class="k">def</span> <span class="nf">Division</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		**Mathematical Division:**</span>
+<span class="sd">		Divides variables a and b</span>
+
+<span class="sd">		:return: retVal - value of this operation.</span>
+<span class="sd">		</span>
+<span class="sd">		- Special Cases::</span>
+<span class="sd">			</span>
+<span class="sd">			Division(a,0); a is from (-inf,+inf) -- Returns +infinity</span>
+<span class="sd">			Division(0,0); -- Returns NaN</span>
+
+<span class="sd">		- Example::</span>
+
+<span class="sd">			Division(4,2)</span>
+
+<span class="sd">		- Expected Success Response::</span>
+
+<span class="sd">			2</span>
+
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	TODO: code</span>
+<span class="sd">	&quot;&quot;&quot;</span></div>
+<div class="viewcode-block" id="Multiplication"><a class="viewcode-back" href="../index.html#calculator.Multiplication">[docs]</a><span class="k">def</span> <span class="nf">Multiplication</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		**Mathematical Muliplication:**</span>
+<span class="sd">		Multiplies varibles a and b</span>
+
+<span class="sd">		:return: retVal - value of this operation</span>
+
+<span class="sd">		- Special Cases::</span>
+
+<span class="sd">			n/a</span>
+
+<span class="sd">		- Example::</span>
+
+<span class="sd">			Multiplication(2,2)</span>
+
+<span class="sd">		- Expected Success Response::</span>
+
+<span class="sd">			4</span>
+
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	TODO: code</span>
+<span class="sd">	&quot;&quot;&quot;</span></div>
+
+<div class="viewcode-block" id="Factorial"><a class="viewcode-back" href="../index.html#calculator.Factorial">[docs]</a><span class="k">def</span> <span class="nf">Factorial</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		**Mathematical Factiorial:**</span>
+<span class="sd">		Calculates the value of *a*!</span>
+
+<span class="sd">		:return: retVal - value of this operation</span>
+
+<span class="sd">		- Special Cases::</span>
+
+<span class="sd">			Factorial(0) -- **Returns:**  1</span>
+
+<span class="sd">		- Example::</span>
+
+<span class="sd">			Factorial(2)</span>
+
+<span class="sd">		- Expected Suceess Response::</span>
+
+<span class="sd">			2</span>
+
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	TODO: code</span>
+<span class="sd">	&quot;&quot;&quot;</span></div>
+
+<div class="viewcode-block" id="Exponentiation"><a class="viewcode-back" href="../index.html#calculator.Exponentiation">[docs]</a><span class="k">def</span> <span class="nf">Exponentiation</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		**Mathematical Exponentiation:**</span>
+<span class="sd">		Calculates the value of *a* to the power of *b*</span>
+
+<span class="sd">		:return: retVal - value of this operation</span>
+
+<span class="sd">		- Special Cases::</span>
+
+<span class="sd">			Exponentiation(a,0); a is from (-inf,+inf) -- Returns 1</span>
+<span class="sd">		</span>
+<span class="sd">		- Example::</span>
+
+<span class="sd">			Exponentiation(2,1)</span>
+
+<span class="sd">		- Expected Success Response::</span>
+
+<span class="sd">			2</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	TODO: code</span>
+<span class="sd">	&quot;&quot;&quot;</span></div>
+
+<div class="viewcode-block" id="Root"><a class="viewcode-back" href="../index.html#calculator.Root">[docs]</a><span class="k">def</span> <span class="nf">Root</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		**Mathematical Root:**</span>
+<span class="sd">		Calculates the value of *b*th root of a</span>
+
+<span class="sd">		:return: retVal - value of this operation</span>
+
+<span class="sd">		- Special Cases::</span>
+
+<span class="sd">			n/a</span>
+
+<span class="sd">		- Example::</span>
+
+<span class="sd">			Root(8,3)</span>
+
+<span class="sd">		- Expected Success Result::</span>
+
+<span class="sd">			2</span>
+<span class="sd">		</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	TODO:code</span>
+<span class="sd">	&quot;&quot;&quot;</span></div>
+
+<div class="viewcode-block" id="Log"><a class="viewcode-back" href="../index.html#calculator.Log">[docs]</a><span class="k">def</span> <span class="nf">Log</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">		**Mathematical Logarithm:**</span>
+<span class="sd">		Calculates the value of logarithm of *b* to base *a*</span>
+
+<span class="sd">		:return: retVal - value of this operaton</span>
+
+<span class="sd">		- Special Cases::</span>
+
+<span class="sd">			Log(a,1); a is from (0,+inf) -- Returns 0</span>
+<span class="sd">			Log(a,b); a is from (-inf,0&gt; or b is from (-inf,0&gt; -- Returns None</span>
+
+<span class="sd">		- Example::</span>
+
+<span class="sd">			Log(10,10)</span>
+
+<span class="sd">		- Expected Success Result::</span>
+
+<span class="sd">			1</span>
+
+<span class="sd">	&quot;&quot;&quot;</span>
+
+	<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">	TODO: code</span>
+<span class="sd">	&quot;&quot;&quot;</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Calculator</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, RunySoft.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
