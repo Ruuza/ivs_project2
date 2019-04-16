@@ -1,5 +1,5 @@
 .. Calculator documentation master file, created by
-   sphinx-quickstart on Tue Apr  2 02:26:23 2019.
+   sphinx-quickstart on Wed Apr 17 00:29:47 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
