@@ -1,17 +1,18 @@
-Prostredi
+Environment
 ---------
 
 Ubuntu 64bit
-Windows 64bit
 
-Autori
+
+Authors
 ------
 
-Nazev tymu
-- xlogin01 jmeno prijmeni 
-- xlogin02 jmeno prijmeni 
-- xlogin03 jmeno prijmeni 
-- xlogin04 jmeno prijmeni 
+RunySoft
+- xruzan00 Petr Růžanský 
+- xkratk17 Matěj Krátký 
+- xlebod00 Denis Lebó 
+- xandrl08 Ondřej Andrla
+
 
 Licence
 -------
