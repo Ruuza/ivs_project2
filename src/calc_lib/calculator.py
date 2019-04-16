@@ -199,7 +199,7 @@ def Exponentiation(a,b):
 def Root(a,b):
 	"""
 		**Mathematical Root:**
-		Calculates the value of *b*th root of a
+		Calculates the value of *b* th root of a
 		
 		:param a: Base of the root
 
