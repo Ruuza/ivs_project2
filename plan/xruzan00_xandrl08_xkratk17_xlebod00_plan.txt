@@ -40,6 +40,7 @@ Datum 18.3.2018
         instalátor/odinstalátor
         návod k instalaci a odinstalaci
         prezentace
+        review finálního produktu
         readme
     
 
@@ -48,7 +49,8 @@ Datum 18.3.2018
         interface pro matematickou knihovnu
         testy
         makefile
-        směrodatná odchylka + Profilling
+        Profilling směrodatné odchylky
+        programová dokumentace
         
     
     xandrl08:
@@ -62,7 +64,9 @@ Datum 18.3.2018
     xkratk17:
 
         implementace matematické knihovny
-        programová dokumentace
+        programová dokumentace směrodatné odchylky
+        implementace směrodatné odchylky
+        
 
 
 3. Komunikační kanály
