@@ -67,6 +67,7 @@ Datum 18.3.2018
         programová dokumentace směrodatné odchylky
         implementace směrodatné odchylky
         
+        
 
 
 3. Komunikační kanály
