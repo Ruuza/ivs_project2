@@ -156,10 +156,13 @@ def Factorial(a):
 
 	"""
 
-	
-	retVal = 1
-	if a<1:
+	if a % 1 != 0:
 		return None
+	retVal = 1
+	if a<0:
+		return None
+	if a==0:
+		return 1
 	while a!=1:
 		retVal = a * retVal
 		a-=1
@@ -262,3 +265,4 @@ def Log(a,b):
 	"""
 	TODO: code
 	"""
+Factorial(8)

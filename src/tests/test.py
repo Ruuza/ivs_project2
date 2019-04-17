@@ -67,16 +67,16 @@ class TestCalculator(unittest.TestCase):
 		Tests the correct functionality of the Factorial function
 		"""
 		print(".....Factorial Tests......")
-		a = [0,2,1.2]
-		expectedResult = [1,2,1.101802490879712]
+		a = [0,2]
+		expectedResult = [1,2]
 		for i in range(0,len(a)):
 			result = calc.Factorial(a[i])
 			if not self.assertEqual(expectedResult[i],result):
-				print("--TEST-- Factorial(%6s,%6s)		[ OK ]" %(a[i],b[i]))
-		SpecialA = [-1,0.1,1E-5]
+				print("--TEST-- Factorial(%6s)			[ OK ]" %(a[i]))
+		SpecialA = [-1,0.1,1E-5,1.2]
 		for i in range(0,len(a)):
 			if not self.assertIsNone(calc.Factorial(SpecialA[i])):
-				print("--TEST-- Factorial(%6s,%6s)		[ OK ]" %(a[i],b[i]))
+				print("--TEST-- Factorial(%6s)			[ OK ]" %(a[i]))
 
 	def test_exponentiation(self):
 		"""
