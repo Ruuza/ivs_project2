@@ -3,6 +3,7 @@
 .. moduleauthor:: RunySoft
 
 """
+import math
 
 def Addition(a,b):
 	"""
@@ -233,7 +234,7 @@ def Root(a,b):
 	retVal = a ** (1/b)
 	return retVal
 
-def Log(a,b):
+def Ln(a):
 	"""
 		**Mathematical Logarithm:**
 		Calculates the value of logarithm of *a* to base *b*
@@ -262,7 +263,4 @@ def Log(a,b):
 
 	"""
 
-	"""
-	TODO: code
-	"""
-Factorial(8)
+	return math.log(a)
