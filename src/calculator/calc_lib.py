@@ -236,31 +236,28 @@ def Root(a,b):
 
 def Ln(a):
 	"""
-		**Mathematical Logarithm:**
-		Calculates the value of logarithm of *a* to base *b*
+		**Mathematical Natural Logarithm:**
+		Calculates the value of logarithm of *a* to base of the Eulers number
 		
-		:param a: Value to calculate the logarith of
-
-		:param b: Base of the logarithm
+		:param a: Value to calculate the natural logarithm of 
 
 		:type a: number 
-
-		:type b: number
 
 		:return: retVal - value of this operaton
 
 		- Special Cases::
 
-			Log(a,b); a or b is <0 -- Returns None
+			Log(a); a is <=0 -- Returns None
 
 		- Example::
 
-			Log(10,10)
+			Ln(1)
 
 		- Expected Success Result::
 
-			1
+			0
 
 	"""
-
+	if a <= 0:
+		return None
 	return math.log(a)

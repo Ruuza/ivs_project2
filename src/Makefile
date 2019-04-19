@@ -10,13 +10,13 @@ all:
 
 pack:
 	cd ../;\
-	zip -r $(APP_NAME) src docs plan mockup profiling skutecnost.txt hodnoceni.txt debugging.png screenshot.png README.md dokumentace.pdf
+	zip -r $(APP_NAME) src plan mockup profiling skutecnost.txt hodnoceni.txt debugging.png screenshot.png README.md dokumentace.pdf
 
 clean: 
-	rm -rf ivs
+
 
 test:
-	cd tests; python3 test.py
+	cd tests; python3 test_calc_lib.py
 
 doc:
-	cd ../docs; make html
+	cd sphinx_doc; make html

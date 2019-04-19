@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 import unittest
 import sys
-sys.path.append('../calc_lib')
-import calculator as calc
+import math
+sys.path.append('../calculator')
+import calc_lib as calc
 
 class TestCalculator(unittest.TestCase):
 	def test_addition(self):
@@ -47,7 +48,7 @@ class TestCalculator(unittest.TestCase):
 		SpecialB = [0,0]
 		for i in range(0,len(SpecialA)):
 			if not self.assertIsNone(calc.Division(SpecialA[i],SpecialB[i])):
-				print("--TEST-- Division(%6s,%6s)		[ OK ]" %(a[i],b[i]))
+				print("--TEST-- Division(%6s,%6s)		[ OK ]" %(SpecialA[i],SpecialB[i]))
 
 	def test_multiplication(self):
 		"""
@@ -76,7 +77,7 @@ class TestCalculator(unittest.TestCase):
 		SpecialA = [-1,0.1,1E-5,1.2]
 		for i in range(0,len(a)):
 			if not self.assertIsNone(calc.Factorial(SpecialA[i])):
-				print("--TEST-- Factorial(%6s)			[ OK ]" %(a[i]))
+				print("--TEST-- Factorial(%6s)			[ OK ]" %(SpecialA[i]))
 
 	def test_exponentiation(self):
 		"""
@@ -108,27 +109,25 @@ class TestCalculator(unittest.TestCase):
 		SpecialB = [2,2]
 		for i in range(0,len(SpecialA)):
 			if not self.assertIsNone(calc.Root(SpecialA[i],SpecialB[i])):
-				print("--TEST-- Root(%6s,%6s)			[ OK ]" %(a[i],b[i]))
+				print("--TEST-- Root(%6s,%6s)			[ OK ]" %(SpecialA[i],SpecialB[i]))
 
-	def test_log(self):
+	def test_ln(self):
 		"""
 		Test the correct functionality of the Log function
 		"""
 		print(".....Log Tests......")
-		a = [1,42,100,1E42]
-		b = [5,42,10,1E21]
-		expectedResult = [1,1,2,2]
+		a = [1,math.exp(1),math.exp(2/3)]
+		expectedResult = [0,1,2/3]
 		for i in range(0,len(a)):
-			result = calc.Log(a[i],b[i])
+			result = calc.Ln(a[i])
 			if not self.assertEqual(expectedResult[i],result):
-				print("--TEST-- Log(%6s,%6s)		[ OK ]" %(a[i],b[i]))
+				print("--TEST-- Log(%8.4s)				[ OK ]" %(a[i]))
 
-		SpecialA = [0,-1,1,-1E42]
-		SpecialB = [5,2,-1,-1E42]
+		SpecialA = [0,-1,-1E42]
 		for i in range(0,len(SpecialA)):
-			calc.Log(SpecialA[i],SpecialB[i])
-			if not self.assertIsNone(calc.Log(SpecialA[i],SpecialB[i])):
-				print("--TEST-- Log(%6s,%6s)		[ OK ]" %(a[i],b[i]))
+			calc.Ln(SpecialA[i])
+			if not self.assertIsNone(calc.Ln(SpecialA[i])):
+				print("--TEST-- Log(%8s)				[ OK ]" %(SpecialA[i]))
 
 
 if __name__ == '__main__':

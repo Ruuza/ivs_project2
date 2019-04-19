@@ -12,7 +12,7 @@ Welcome to Calculator's documentation!
 
 Calculator
 ===========
-.. automodule:: calculator
+.. automodule:: calc_lib
    :members:
 
 Indices and tables
