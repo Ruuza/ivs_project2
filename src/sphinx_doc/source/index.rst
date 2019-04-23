@@ -12,8 +12,13 @@ Welcome to Calculator's documentation!
 
 Calculator
 ===========
-.. automodule:: calc_lib
+.. automodule:: calculator.calc_lib
    :members:
+
+Standard Devation
+==================
+.. automodule:: standard_deviation.standard_dev_lib
+	:members:
 
 Indices and tables
 ==================
