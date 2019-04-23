@@ -32,7 +32,6 @@ def stDev(file):
     average = calc.Division(total,N)
     stdDevAverage = calc.Multiplication(N,calc.Exponentiation(average,2))
     stdDev = calc.Root(calc.Division(calc.Subtraction(totalSquared,stdDevAverage),N-1),2)
-    print("------STANDARD DEVIATION------")
     print(stdDev)
     return None
 
