@@ -2,8 +2,11 @@
 import unittest
 import sys
 import math
-sys.path.append('../calculator')
-import calc_lib as calc
+import os
+sys.path.append(
+    os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
+
+import calculator.calc_lib as calc
 
 class TestCalculator(unittest.TestCase):
 	def test_addition(self):
