@@ -1,0 +1,45 @@
+Deviation with 10 number
+-----------------------
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:202(Root)
+       11    0.000    0.000    0.000    0.000 calc_lib.py:171(Exponentiation)
+       20    0.000    0.000    0.000    0.000 calc_lib.py:7(Addition)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:4(<module>)
+        2    0.000    0.000    0.000    0.000 calc_lib.py:69(Division)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:102(Multiplication)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:38(Subtraction)
+
+
+
+
+
+Deviation with 100 numbers
+--------------------------
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      200    0.000    0.000    0.000    0.000 calc_lib.py:7(Addition)
+      101    0.000    0.000    0.000    0.000 calc_lib.py:171(Exponentiation)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:202(Root)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:4(<module>)
+        2    0.000    0.000    0.000    0.000 calc_lib.py:69(Division)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:38(Subtraction)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:102(Multiplication)
+
+
+
+
+
+Deviation with 1000 numbers
+---------------------------
+
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     2000    0.002    0.000    0.002    0.000 calc_lib.py:7(Addition)
+     1001    0.001    0.000    0.001    0.000 calc_lib.py:171(Exponentiation)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:202(Root)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:4(<module>)
+        2    0.000    0.000    0.000    0.000 calc_lib.py:69(Division)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:102(Multiplication)
+        1    0.000    0.000    0.000    0.000 calc_lib.py:38(Subtraction)
+
