@@ -1,0 +1,11 @@
+This is a report for the profiling, both for math_lib only and for all
+
+math_lib:
+    As we can see, exponentiation and addition, they both incrementing by the input values count.
+    If we want to optimise the math_lib, we should focus on them. But they seems quite allright. It seems they cannot be optimised more.
+
+full:
+    Without the math_lib one, the only one operations, which are incrementing by the count of input values are rstrip and append.
+    Once again, they are both fine with the time. Maybe rstrip could be more optimised by changing it by the some alternative function, but i think it would be useless.
+
+There are no any bigger bottlenecks. 
