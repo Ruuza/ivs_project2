@@ -1,7 +1,4 @@
-#!/usr/bin/env python3
-
 """Source code for Calculator by RunySoft
-
 .. moduleauthor:: RunySoft
 
 """
