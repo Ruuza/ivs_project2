@@ -16,7 +16,7 @@ otherwise download the version with installer below
 
 Run with .deb package
 --------------------
-To intall the program on linux that support debian packages, download runycalc.deb package from root directory.
+To intall the program on linux that support debian packages, download runycalc.deb package from [here](https://github.com/Ruuza/ivs_project2/releases/tag/1.0).
 
 Navigate to the folder where the package is and write this command to install the package
 
