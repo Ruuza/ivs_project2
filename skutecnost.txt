@@ -1,1 +1,9 @@
-tento soubor bude obsahovat rozdil mezi planem projektu a skutecnosti
+1. Přidělené úlohy z plánu jsme dodržovali jen z části. Někdy každý z nás dělal něco jiného, nebo jsme se na jednom úokolu podíleli.
+
+2. Jeden člen nás vodil za nos, že GUI dodělá, nakonec to na poslední chvíli zabalil. Všechny jeho úkoly jsme udělali raději předtím, ale i tak jsme GUI kvůli tomuto nestihli. Problém souvisel tak trochu se skutečnosí 3.
+
+3. Neplnění deadlinů. Některé deadliny jsme plnili o několik dní déle. Ze začátku jsem neplnění deadlinů netrestal což byla chyba. Strhávání bodů za každý den neodevzdání se osvědčil. Škoda, že jsem tuto taktiku nepoužil dříve.
+
+4. Ačkoliv byly testy vytvořeny včas, zdálo se mi, že pro některé členy z teamu byly "pro srandu králíkům". Občas (ze začátku velmi často) přicházely žádosti o pull request, které neprošli testama.
+
+5. Několikrát jsem u pull requestů moc důvěřoval než abych je tolik testoval a nakonec jsem na to vždy doplatil.
