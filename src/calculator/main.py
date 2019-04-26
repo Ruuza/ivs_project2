@@ -17,8 +17,11 @@ class Application(Frame):
         self.oldA = 0
 
     def replaceText(self, text):
+        newText = str(text)
+        if("." in newText):
+            newText = newText.rstrip("0").rstrip(".")
         self.display.delete(0, END)
-        self.display.insert(0, text)
+        self.display.insert(0, newText)
 
     def calculateExpression(self):
 
@@ -58,13 +61,10 @@ class Application(Frame):
             return
         if(self.operation == ""):
             if self.b == 0:
-                print("IF, %s, %s"%(self.a, self.b))
                 self.operation = text
                 self.b = self.a
                 self.a = ""
-                print("endIF, %s, %s"%(self.a, self.b))
             else:
-                print("IF2, %s, %s"%(self.a, self.b))
                 if self.a != "" and self.b != 0:
                     self.operation = text
                     self.b = self.a
@@ -74,12 +74,10 @@ class Application(Frame):
                     self.a = ""
         else:
             if self.b == 0:
-                print("ELSE, %s, %s"%(self.a, self.b))
                 self.operation = text
                 self.b = self.a
                 self.a = ""
             else:
-                print("ELSE2, %s, %s"%(self.a, self.b))
                 self.calculateExpression()
                 self.operation = text
         
