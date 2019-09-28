@@ -1,4 +1,4 @@
 xruzan00 150 (GUI, profiling, instalátor)
 xlebod00 130 (směrodatná odchylka, dokumentace, testy)
 xkratk17 120 (uživatelská dokumentace, implementace matematické knihovny)
-xandrl08 0 ()
+xandrl08 0 (
